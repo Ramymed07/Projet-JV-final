@@ -11,6 +11,7 @@ TagManager:
   - locked door (Entrance)
   - key
   - Obstacle
+  - Slot1
   layers:
   - Default
   - TransparentFX

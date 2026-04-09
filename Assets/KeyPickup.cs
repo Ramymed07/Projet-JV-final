@@ -5,7 +5,6 @@ public class KeyPickup : MonoBehaviour
     [Header("Key Settings")]
     public string lockedDoorTag1 = "locked door A";
     public string unlockedDoorTag1 = "door";
-
     public string lockedDoorTag2 = "locked door B";
     public string unlockedDoorTag2 = "reverse door";
 
@@ -13,6 +12,9 @@ public class KeyPickup : MonoBehaviour
     public float pickupRange = 2f;
     public KeyCode pickupKey = KeyCode.E;
     public Camera playerCamera;
+
+    [Header("UI Settings")]
+    public GameObject Slot1;
 
     void Update()
     {
@@ -30,6 +32,7 @@ public class KeyPickup : MonoBehaviour
             if (!hit.collider.CompareTag("key")) return;
 
             UnlockDoors();
+            ShowSlot1();
             Destroy(hit.collider.gameObject);
         }
     }
@@ -38,8 +41,15 @@ public class KeyPickup : MonoBehaviour
     {
         foreach (GameObject door in GameObject.FindGameObjectsWithTag(lockedDoorTag1))
             door.tag = unlockedDoorTag1;
-
         foreach (GameObject door in GameObject.FindGameObjectsWithTag(lockedDoorTag2))
             door.tag = unlockedDoorTag2;
+    }
+
+    void ShowSlot1()
+    {
+        if (Slot1 != null)
+            Slot1.SetActive(true);
+        else
+            Debug.LogWarning("Slot1 UI element is not assigned in the Inspector.");
     }
 }
