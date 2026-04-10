@@ -4,6 +4,9 @@ using StarterAssets;
 
 public class ReadablePaper : MonoBehaviour
 {
+    [Header("Main UI")]
+    public GameObject mainUI;
+
     [Header("Paper UI")]
     public GameObject readPanel;
     public GameObject interactPrompt;
@@ -53,6 +56,9 @@ public class ReadablePaper : MonoBehaviour
         if (interactPrompt != null)
             interactPrompt.SetActive(false);
 
+        if (mainUI != null)
+            mainUI.SetActive(false); // 👈 ADD THIS
+
         if (firstPersonController != null)
             firstPersonController.enabled = false;
 
@@ -72,6 +78,9 @@ public class ReadablePaper : MonoBehaviour
             ShowEndingScreen();
             return;
         }
+
+        if (mainUI != null)
+            mainUI.SetActive(true); // 👈 only for normal papers
 
         if (firstPersonController != null)
             firstPersonController.enabled = true;
