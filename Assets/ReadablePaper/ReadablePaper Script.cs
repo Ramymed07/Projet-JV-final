@@ -1,11 +1,19 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using StarterAssets;
 
 public class ReadablePaper : MonoBehaviour
 {
+    [Header("Paper UI")]
     public GameObject readPanel;
     public GameObject interactPrompt;
+
+    [Header("Player Controller")]
     public FirstPersonController firstPersonController;
+
+    [Header("Ending Settings")]
+    public bool isFinalPaper = false;
+    public GameObject endingScreen;
 
     private bool playerInRange = false;
     private bool isReading = false;
@@ -17,6 +25,9 @@ public class ReadablePaper : MonoBehaviour
 
         if (interactPrompt != null)
             interactPrompt.SetActive(false);
+
+        if (endingScreen != null)
+            endingScreen.SetActive(false);
     }
 
     void Update()
@@ -56,6 +67,12 @@ public class ReadablePaper : MonoBehaviour
         if (readPanel != null)
             readPanel.SetActive(false);
 
+        if (isFinalPaper)
+        {
+            ShowEndingScreen();
+            return;
+        }
+
         if (firstPersonController != null)
             firstPersonController.enabled = true;
 
@@ -66,27 +83,51 @@ public class ReadablePaper : MonoBehaviour
             interactPrompt.SetActive(true);
     }
 
+    void ShowEndingScreen()
+    {
+        if (endingScreen != null)
+            endingScreen.SetActive(true);
+
+        if (firstPersonController != null)
+            firstPersonController.enabled = false;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        Time.timeScale = 0f;
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ExitGame()
+    {
+        Time.timeScale = 1f;
+        Application.Quit();
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
+
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Something entered trigger: " + other.name);
-
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered paper trigger");
             playerInRange = true;
 
-            if (interactPrompt != null)
+            if (interactPrompt != null && !isReading)
                 interactPrompt.SetActive(true);
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        Debug.Log("Something exited trigger: " + other.name);
-
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player exited paper trigger");
             playerInRange = false;
 
             if (interactPrompt != null)
@@ -97,4 +138,3 @@ public class ReadablePaper : MonoBehaviour
         }
     }
 }
-    
