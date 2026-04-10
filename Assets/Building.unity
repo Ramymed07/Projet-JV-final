@@ -3411,7 +3411,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: 0}
+  m_AnchoredPosition: {x: 295, y: 136}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257550664
@@ -3434,7 +3434,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This will be the third newspaper clipping!
+  m_text: "31 Octobre 2071\n\n\r\nLes d\xE9tenus du centre de d\xE9tention de Montr\xE9al
+    se sont \xE9vad\xE9s apr\xE8s une attaque men\xE9e par un troupeau d'humains
+    modifi\xE9s. Le principal scientifique ayant travaill\xE9 sur le programme de
+    modification g\xE9n\xE9tique \xAB meilleurs g\xE8nes \xBB est la cible principale
+    des autorit\xE9s. Nous pensons qu\u2019il a subit une grave blessure \xE0 la
+    t\xEAte, alors nous esp\xE9rons qu'il n'ira pas loin avant d'\xEAtre arr\xEAt\xE9
+    par les autorit\xE9s. \xC0 pr\xE9sent, la plupart des grandes villes de la c\xF4te
+    est du Canada et des \xC9tats-Unis sont compl\xE8tement envahies par ces cr\xE9atures,
+    et le nombre des victimes d\xE9passe d\xE9sormais les dix mille morts. Tous les
+    vols \xE0 destination et en provenance d'Am\xE9rique du Nord ont \xE9t\xE9 annul\xE9s
+    ; les autorit\xE9s recommandent donc aux personnes se trouvant \xE0 proximit\xE9
+    des villes envahies de se d\xE9placer vers l'ouest.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3500,7 +3511,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -134.7103, y: 0, z: -159.61194, w: 0}
+  m_margin: {x: -757.7517, y: 0, z: -159.61194, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8632,7 +8643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &837430240
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8641,7 +8652,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837430239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8649,7 +8660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.53871757, y: 0.5}
   m_AnchorMax: {x: 0.53871757, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: -136.4}
+  m_AnchoredPosition: {x: 50, y: 50}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837430242
@@ -8672,7 +8683,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello! This will be the first newspaper clipping that the player finds.
+  m_text: "Derni\xE8res nouvelles\n\r\n7 octobre 2070\n\r\nCe matin, \xE0 10 h 30,
+    une cr\xE9ature s'est \xE9chapp\xE9e du laboratoire de g\xE9n\xE9tique Triple
+    Helix et a attaqu\xE9 le centre communautaire local. L'incident a fait 13 morts
+    et de nombreux bless\xE9s. Les autorit\xE9s locales sont parvenues \xE0 neutraliser
+    la menace et la cr\xE9ature est actuellement \xE9tudi\xE9e dans un centre de
+    recherche gouvernemental afin de d\xE9terminer sa nature. Le scientifique principal
+    du laboratoire de g\xE9n\xE9tique Triple Helix se fait interroger. Nous vous
+    tiendrons inform\xE9s de l'\xE9volution de la situation.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8738,7 +8756,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -315.29297, y: -128.78442, z: -290.80115, w: -63.824158}
+  m_margin: {x: -521.52167, y: -128.78442, z: -290.80115, w: -63.824158}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10256,7 +10274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.024463056}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7, y: -3.9999847}
+  m_AnchoredPosition: {x: 7, y: -3.9999695}
   m_SizeDelta: {x: -1, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002430005
@@ -18143,7 +18161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 426, y: 98}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533180432
@@ -18166,7 +18184,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "6 mai 2072\n\r\nLes r\xE9serves d'eau et de nourriture s'\xE9puisent,
+    le Parlement est tomb\xE9 et beaucoup n'ont pas surv\xE9cu \xE0 l'hiver d\xFB
+    au manque de nourriture et d'abri. Le docteur Heinz Doofenschmirtz, le scientifique
+    en chef responsable du quasi-extermination de la population du Qu\xE9bec et dont
+    le r\xE8gne de terreur continue de s'\xE9tendre, est toujours en fuite. Doofenschmirtz,
+    si vous lisez ceci, sachez que vous \xEAtes responsable de tout ce qui s\u2019est
+    pass\xE9e.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18175,8 +18199,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -18193,8 +18217,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18232,7 +18256,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -864.84503, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -22330,7 +22354,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862784591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22338,7 +22362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56, y: -6.3}
+  m_AnchoredPosition: {x: 155, y: 102}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1862784593
@@ -22361,7 +22385,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This will be the second newspaper clipping!
+  m_text: "1er novembre 2070\n\r\nLa population est en \xE9tat de panique alors que
+    d'autres cr\xE9atures du laboratoire de g\xE9n\xE9tique Triple Helix, que les
+    autorit\xE9s ont d\xE9sormais surnomm\xE9es \xAB humains modifi\xE9s \xBB, s'\xE9chappent
+    et s\xE8ment la terreur au Qu\xE9bec. De nombreuses personnes fuient la province
+    et la ville de Montr\xE9al a \xE9t\xE9 enti\xE8rement \xE9vacu\xE9e. Aucune m\xE9thode
+    s\xFBre et fiable pour \xE9radiquer cette menace n'a encore \xE9t\xE9 trouv\xE9e.
+    Il est recommand\xE9 \xE0 tous de rester chez eux, sauf en cas d'absolue n\xE9cessit\xE9.
+    Par ailleurs, les poursuites contre tous ceux qui ont travaill\xE9 sur le programme
+    de modification g\xE9n\xE9tique \xAB meilleurs g\xE8nes \xBB sont toujours en
+    cours, et les autorit\xE9s mettent tout en \u0153uvre pour les traduire en justice
+    pour les nombreux d\xE9c\xE8s qu'ils ont caus\xE9s.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22427,7 +22461,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -187.17255, y: 0, z: -282.94617, w: 0}
+  m_margin: {x: -618.7608, y: 0, z: -300.2937, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
