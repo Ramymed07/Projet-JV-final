@@ -10014,7 +10014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.88995, y: 116.423996}
+  m_AnchoredPosition: {x: 120.88995, y: 114}
   m_SizeDelta: {x: 29.956, y: 31.5737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &836205994
@@ -10667,7 +10667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63.932053, y: 121.36699}
+  m_AnchoredPosition: {x: -63.932053, y: 117.4}
   m_SizeDelta: {x: 29.956, y: 31.5737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851930196
@@ -14694,7 +14694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -39.24, y: 18}
+  m_AnchoredPosition: {x: -39.24, y: 12}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1154868023
@@ -15209,7 +15209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.327946, y: 118.787994}
+  m_AnchoredPosition: {x: 26.327946, y: 116.6}
   m_SizeDelta: {x: 29.956, y: 31.5737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193154164
@@ -27994,7 +27994,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160.9, y: 122.9}
+  m_AnchoredPosition: {x: -160.9, y: 118}
   m_SizeDelta: {x: 29.956, y: 31.5737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046551015
@@ -28125,7 +28125,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3e049ed4a60324745a1c1691c4a91a7d, type: 2}
     - target: {fileID: 1475266700151953026, guid: 15f5f5e1a60222b448bd05ef082fde3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.3
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 1613241894724549715, guid: 15f5f5e1a60222b448bd05ef082fde3a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
