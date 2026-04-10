@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class KeyPickup : MonoBehaviour
+public class KeyPick : MonoBehaviour
 {
     [Header("Key Settings")]
     public string lockedDoorTag1 = "locked door A";
