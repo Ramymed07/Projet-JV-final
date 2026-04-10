@@ -13057,7 +13057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1154868022
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19760,8 +19760,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Derni\xE8re inspection de s\xE9curit\xE9 faite par l'employ\xE9 num\xE9ro
-    6769\n\nTouches:\nLampe de poche: F\nE:int\xE9ragir avec les objets\nEsc: Fermer
+  m_text: "Touches:\nLampe de poche: F\nE:int\xE9ragir avec les objets\nEsc: Fermer
     interface\nSpace: sauter\nShift: Courir\nWASD: Marcher\nI: Voir carte d'identit\xE9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26941,7 +26940,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 617130ea51e82a741825f0ae60e6f2fe, type: 2}
+  - {fileID: 2100000, guid: 51daf7c993ccd194a962f83cbc6093d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
