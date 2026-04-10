@@ -12,15 +12,6 @@ TagManager:
   - key
   - Obstacle
   - Slot1
-  - Locked door (storage room)
-  - Locked door reverse (storage room)
-  - Slot2
-  - Slot3
-  - Slot4
-  - Locked door reverse (Bathroom)
-  - Locked door (Bathroom)
-  - Locked door (laboratory)
-  - Locked door reverse (laboratory)
   layers:
   - Default
   - TransparentFX
