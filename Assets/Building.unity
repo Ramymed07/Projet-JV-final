@@ -400,7 +400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 989566909a021b84d86c3f70b668dc6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27f7430dd674cbf428cf0f71a8278655, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1407,7 +1407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 989566909a021b84d86c3f70b668dc6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: acb1ffd811bf6d24880ec730ad18657d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1796,7 +1796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6070003293245560619, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: m_TagString
-      value: locked door (Entrance)
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6100470238328772042, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2107,7 +2107,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ac4938fe40cf9ee40a1bfe6f8505c35b, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6a53e1cf81bde0c439a690de6a5bbdc8, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2131,14 +2131,14 @@ RectTransform:
   m_GameObject: {fileID: 131576865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18.53126, y: 10.9652405, z: 10.9652405}
+  m_LocalScale: {x: 8.898223, y: 6.6801367, z: 10.9652405}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1367001583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &133725622
@@ -2719,7 +2719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 989566909a021b84d86c3f70b668dc6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 639b18d5f098a30469f671b5ab64c664, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5523,7 +5523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f1cbb96929f7b624bbd4eaad6eca0bde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6a53e1cf81bde0c439a690de6a5bbdc8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9091,7 +9091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.53871757, y: 0.5}
   m_AnchorMax: {x: 0.53871757, y: 0.5}
-  m_AnchoredPosition: {x: 35, y: -42}
+  m_AnchoredPosition: {x: 65, y: -68}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837430242
@@ -9116,12 +9116,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Derni\xE8res nouvelles\n\r\n7 octobre 2070\n\r\nCe matin, \xE0 10 h 30,
     une cr\xE9ature s'est \xE9chapp\xE9e du laboratoire de g\xE9n\xE9tique Triple
-    Helix et a attaqu\xE9 le centre communautaire local. L'incident a fait 13 morts
-    et de nombreux bless\xE9s. Les autorit\xE9s locales sont parvenues \xE0 neutraliser
-    la menace et la cr\xE9ature est actuellement \xE9tudi\xE9e dans un centre de
-    recherche gouvernemental afin de d\xE9terminer sa nature. Le scientifique principal
-    du laboratoire de g\xE9n\xE9tique Triple Helix se fait interroger. Nous vous
-    tiendrons inform\xE9s de l'\xE9volution de la situation.\r\n"
+    H\xE9lice et a attaqu\xE9 le centre communautaire local. L'incident a fait 13
+    morts et de nombreux bless\xE9s. Les autorit\xE9s locales sont parvenues \xE0
+    neutraliser la menace et la cr\xE9ature est actuellement \xE9tudi\xE9e dans un
+    centre de recherche gouvernemental afin de d\xE9terminer sa nature. Le scientifique
+    principal du laboratoire de g\xE9n\xE9tique Triple Helix se fait interroger.
+    Nous vous tiendrons inform\xE9s de l'\xE9volution de la situation.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10947,7 +10947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.024463056}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7, y: -4}
+  m_AnchoredPosition: {x: 7, y: -4.0000305}
   m_SizeDelta: {x: -1, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002430005
@@ -12583,7 +12583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 989566909a021b84d86c3f70b668dc6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f99d25c4e1786854287abaf16d85877a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16701,7 +16701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6070003293245560619, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: m_TagString
-      value: locked door reverse (Entrance)
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6100470238328772042, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: m_LocalScale.x
@@ -17670,6 +17670,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1854196365}
   - {fileID: 1154868022}
   - {fileID: 1002430004}
   - {fileID: 1721051029}
@@ -18970,11 +18971,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "6 mai 2070\n\r\nLes r\xE9serves d'eau et de nourriture s'\xE9puisent,
     le Parlement est tomb\xE9 et beaucoup n'ont pas surv\xE9cu \xE0 l'hiver d\xFB
-    au manque de nourriture et d'abri. Le docteur Heinz Doofenschmirtz, le scientifique
-    en chef responsable du quasi-extermination de la population du Qu\xE9bec et dont
-    le r\xE8gne de terreur continue de s'\xE9tendre, est toujours en fuite. Doofenschmirtz,
-    si vous lisez ceci, sachez que vous \xEAtes responsable de tout ce qui s\u2019est
-    pass\xE9e.\r\n\r\n"
+    au manque de nourriture et d'abri. Docteur Heinz, le scientifique en chef responsable
+    du quasi-extermination de la population du Qu\xE9bec et dont le r\xE8gne de terreur
+    continue de s'\xE9tendre, est toujours en fuite. Heinz, si vous lisez ceci, sachez
+    que vous \xEAtes responsable de tout ce qui s\u2019est pass\xE9e.\r\n\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19190,11 +19190,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1119684809831326081, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: m_Center.x
-      value: -0.5000044
+      value: -0.500003
       objectReference: {fileID: 0}
     - target: {fileID: 1119684809831326081, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: m_Center.z
-      value: 0.0007061539
+      value: 0.0007071076
       objectReference: {fileID: 0}
     - target: {fileID: 1947196015166027971, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: m_LocalScale.x
@@ -19254,7 +19254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3004138160691418633, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: doorBounds.m_Center.x
-      value: -33.863506
+      value: -36.085796
       objectReference: {fileID: 0}
     - target: {fileID: 3004138160691418633, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       propertyPath: doorBounds.m_Center.y
@@ -23068,20 +23068,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854196361}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1555280124}
   - {fileID: 996662415}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1367001583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 609, y: 290}
+  m_SizeDelta: {x: 1218, y: 580}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1856477779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: d3b99b2934677d14ea7f3078a4ceddf8, type: 3}
@@ -23532,18 +23532,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "1er novembre 2070\n\r\nLa population est en \xE9tat de panique alors que
-    d'autres cr\xE9atures du laboratoire de g\xE9n\xE9tique Triple Helix, que les
-    autorit\xE9s ont d\xE9sormais surnomm\xE9es \xAB humains modifi\xE9s \xBB, s'\xE9chappent
-    et s\xE8ment la terreur au Qu\xE9bec. De nombreuses personnes fuient la province
-    et la ville de Montr\xE9al a \xE9t\xE9 enti\xE8rement \xE9vacu\xE9e. Aucune m\xE9thode
-    s\xFBre et fiable pour \xE9radiquer cette menace n'a encore \xE9t\xE9 trouv\xE9e.
-    Il est recommand\xE9 \xE0 tous de rester chez eux, sauf en cas d'absolue n\xE9cessit\xE9.
-    Par ailleurs, les poursuites contre tous ceux qui ont travaill\xE9 sur le programme
-    de modification g\xE9n\xE9tique \xAB meilleurs g\xE8nes \xBB et l'ont promu sont
-    toujours en cours, et les autorit\xE9s mettent tout en \u0153uvre pour les traduire
-    en justice pour les nombreux d\xE9c\xE8s qu'ils ont caus\xE9s. Il est fort probable
-    que les personnes impliqu\xE9es dans la cr\xE9ation de ces horribles cr\xE9atures
-    risquent de nombreuses ann\xE9es de prison.\r\n"
+    d'autres cr\xE9atures du laboratoire de g\xE9n\xE9tique Triple H\xE9lice, que
+    les autorit\xE9s ont d\xE9sormais surnomm\xE9es \xAB humains modifi\xE9s \xBB,
+    s'\xE9chappent et s\xE8ment la terreur au Qu\xE9bec. De nombreuses personnes
+    fuient la province et la ville de Montr\xE9al a \xE9t\xE9 enti\xE8rement \xE9vacu\xE9e.
+    Aucune m\xE9thode s\xFBre et fiable pour \xE9radiquer cette menace n'a encore
+    \xE9t\xE9 trouv\xE9e. Il est recommand\xE9 \xE0 tous de rester chez eux, sauf
+    en cas d'absolue n\xE9cessit\xE9. Par ailleurs, les poursuites contre tous ceux
+    qui ont travaill\xE9 sur le programme de modification g\xE9n\xE9tique \xAB meilleurs
+    g\xE8nes \xBB et l'ont promu sont toujours en cours, et les autorit\xE9s mettent
+    tout en \u0153uvre pour les traduire en justice pour les nombreux d\xE9c\xE8s
+    qu'ils ont caus\xE9s. Il est fort probable que les personnes impliqu\xE9es dans
+    la cr\xE9ation de ces horribles cr\xE9atures risquent de nombreuses ann\xE9es
+    de prison.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27691,5 +27692,4 @@ SceneRoots:
   - {fileID: 1063222056}
   - {fileID: 2066713734}
   - {fileID: 1513668601}
-  - {fileID: 1854196365}
   - {fileID: 2073012713}
