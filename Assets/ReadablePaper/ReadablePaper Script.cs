@@ -124,8 +124,11 @@ public class ReadablePaper : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Something entered trigger: " + other.name);
+
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player entered paper trigger");
             playerInRange = true;
 
             if (interactPrompt != null && !isReading)
@@ -135,8 +138,11 @@ public class ReadablePaper : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        Debug.Log("Something exited trigger: " + other.name);
+
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player exited paper trigger");
             playerInRange = false;
 
             if (interactPrompt != null)
@@ -146,4 +152,5 @@ public class ReadablePaper : MonoBehaviour
                 ClosePaper();
         }
     }
+
 }
