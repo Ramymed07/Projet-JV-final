@@ -137,6 +137,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _DstBlendAlpha: 0
     - _EnableTopColor: 0
     - _Enable_Top_Color: 1
     - _EnvironmentReflections: 1
@@ -160,6 +161,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _Start_Bend_Range: 0.4
     - _Start_To_Bend_Range: 1
     - _Start_to_bend_range: 1
@@ -182,13 +184,13 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 0.9259865, b: 0.18396229, a: 1}
     - _BottomColor: {r: 0.58431375, g: 0.5051607, b: 0, a: 0}
-    - _Bottom_Color: {r: 0.8380281, g: 1, b: 0, a: 0}
+    - _Bottom_Color: {r: 0.65503323, g: 0.6792453, b: 0.5286579, a: 0}
     - _Color: {r: 1, g: 0.9259865, b: 0.18396229, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Player_Position: {r: 169.991, g: 19.89849, b: 166.09459, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _TopColor: {r: 0.7651269, g: 0.7924528, b: 0, a: 0}
-    - _Top_Color: {r: 0.75746846, g: 0.8867924, b: 0, a: 0}
+    - _Top_Color: {r: 0.1932009, g: 0.1981132, b: 0.16447134, a: 0}
     - _WindDirection: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _Wind_Direction: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
