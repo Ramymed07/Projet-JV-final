@@ -20,8 +20,17 @@ public class PlayerKeyInteractor : MonoBehaviour
     private Dictionary<string, string> collectedKeys = new Dictionary<string, string>();
     private int keysCollectedCount = 0;
 
+
     void Update()
-    {
+	{
+	    Debug.Log($"[PlayerKeyInteractor] puzzleManager={puzzleManager}, 	puzzleOpen={puzzleManager?.gameObject.activeSelf}");
+	
+	    if (puzzleManager != null && puzzleManager.gameObject.activeSelf) return;
+	
+	    if (Input.GetKeyDown(interactKey))
+	        TryInteract();
+	
+    
         // Do not process any interaction while a puzzle panel is open
         if (puzzleManager != null && puzzleManager.gameObject.activeSelf) return;
 
