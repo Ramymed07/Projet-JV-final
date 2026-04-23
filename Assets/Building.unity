@@ -719,7 +719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &15009130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2739,7 +2739,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &98773752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5264,7 +5264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &162262285
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34309,7 +34309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1093904162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -45626,7 +45626,6 @@ MonoBehaviour:
   - {fileID: 98773751}
   - {fileID: 162262284}
   - {fileID: 1093904161}
-  puzzleManager: {fileID: 0}
 --- !u!1001 &1336841933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50914,7 +50913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1555280124
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50936,7 +50935,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 2, y: -2}
-  m_SizeDelta: {x: 630, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1555280125
 MonoBehaviour:

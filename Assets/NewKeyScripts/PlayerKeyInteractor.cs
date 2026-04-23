@@ -13,27 +13,11 @@ public class PlayerKeyInteractor : MonoBehaviour
     [Header("UI Slots")]
     public GameObject[] keySlots;
 
-    [Header("Puzzle")]
-    [Tooltip("Assign the PuzzleManager so key interaction is blocked while a puzzle is open.")]
-    public PuzzleManager puzzleManager;
-
     private Dictionary<string, string> collectedKeys = new Dictionary<string, string>();
     private int keysCollectedCount = 0;
 
-
     void Update()
-	{
-	    Debug.Log($"[PlayerKeyInteractor] puzzleManager={puzzleManager}, 	puzzleOpen={puzzleManager?.gameObject.activeSelf}");
-	
-	    if (puzzleManager != null && puzzleManager.gameObject.activeSelf) return;
-	
-	    if (Input.GetKeyDown(interactKey))
-	        TryInteract();
-	
-    
-        // Do not process any interaction while a puzzle panel is open
-        if (puzzleManager != null && puzzleManager.gameObject.activeSelf) return;
-
+    {
         if (Input.GetKeyDown(interactKey))
         {
             TryInteract();
@@ -51,6 +35,7 @@ public class PlayerKeyInteractor : MonoBehaviour
         Ray ray = playerCamera.ScreenPointToRay(
             new Vector3(Screen.width / 2f, Screen.height / 2f, 0f)
         );
+
         Debug.DrawRay(ray.origin, ray.direction * interactRange, Color.red, 2f);
 
         RaycastHit hit;
@@ -85,15 +70,18 @@ public class PlayerKeyInteractor : MonoBehaviour
         foreach (DoorTagPair pair in keyData.doorPairs)
         {
             if (pair == null) continue;
+
             if (string.IsNullOrEmpty(pair.lockedDoorTag) || string.IsNullOrEmpty(pair.unlockedDoorTag))
             {
                 Debug.LogWarning($"Key '{keyData.name}' has an incomplete door pair.");
                 continue;
             }
+
             collectedKeys[pair.lockedDoorTag] = pair.unlockedDoorTag;
         }
 
         ShowNextKeySlot();
+
         Debug.Log($"Picked up {keyData.keyId}.");
         Destroy(keyData.gameObject);
     }
@@ -101,6 +89,7 @@ public class PlayerKeyInteractor : MonoBehaviour
     void TryUnlockDoorSet(GameObject hitObject)
     {
         string hitTag = hitObject.tag;
+
         if (!collectedKeys.ContainsKey(hitTag))
         {
             Debug.Log($"No matching key for {hitObject.name} with tag '{hitTag}'.");
@@ -110,6 +99,7 @@ public class PlayerKeyInteractor : MonoBehaviour
         foreach (KeyValuePair<string, string> key in collectedKeys)
         {
             GameObject[] matchingDoors = GameObject.FindGameObjectsWithTag(key.Key);
+
             if (matchingDoors.Length > 0)
             {
                 foreach (GameObject door in matchingDoors)
@@ -133,7 +123,10 @@ public class PlayerKeyInteractor : MonoBehaviour
         if (keysCollectedCount < keySlots.Length)
         {
             if (keySlots[keysCollectedCount] != null)
+            {
                 keySlots[keysCollectedCount].SetActive(true);
+            }
+
             keysCollectedCount++;
         }
         else
