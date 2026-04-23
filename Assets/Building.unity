@@ -590,7 +590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &15009130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -608,7 +608,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 140, y: 150}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &15009131
 MonoBehaviour:
@@ -2610,7 +2610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &98773752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2627,8 +2627,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 70, y: -75}
-  m_SizeDelta: {x: 140, y: 150}
+  m_AnchoredPosition: {x: 235, y: -75}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98773753
 MonoBehaviour:
@@ -5135,7 +5135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &162262285
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5152,8 +5152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 70, y: -75}
-  m_SizeDelta: {x: 140, y: 150}
+  m_AnchoredPosition: {x: 395, y: -75}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &162262286
 MonoBehaviour:
@@ -7567,7 +7567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   puzzleManager: {fileID: 1154868023}
   tagToDestroy: Obstacle
-  interactionRange: 5
+  interactionRange: 10
   interactKey: 101
   playerTransform: {fileID: 0}
 --- !u!1 &234457005 stripped
@@ -30653,7 +30653,7 @@ RectTransform:
   m_GameObject: {fileID: 996662414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1.7801399, y: 1.7801399, z: 1.7801399}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 458420957}
@@ -30661,7 +30661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -4, y: -3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &996662416
@@ -34104,7 +34104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1093904162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34121,8 +34121,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 70, y: -75}
-  m_SizeDelta: {x: 140, y: 150}
+  m_AnchoredPosition: {x: 555, y: -75}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093904163
 MonoBehaviour:
@@ -50709,7 +50709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1555280124
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50719,7 +50719,7 @@ RectTransform:
   m_GameObject: {fileID: 1555280123}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.52268, y: 0.52268, z: 0.52268}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 15009130}
@@ -50730,8 +50730,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2, y: -2}
+  m_SizeDelta: {x: 630, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1555280125
 MonoBehaviour:
@@ -61461,7 +61461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
