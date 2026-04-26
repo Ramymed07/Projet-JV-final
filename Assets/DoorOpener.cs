@@ -22,6 +22,9 @@ public class DoorInteraction : MonoBehaviour
 
     void Update()
     {
+        if (Cursor.visible)
+            return;
+
         if (Input.GetKeyDown(interactKey))
             TryInteract();
 

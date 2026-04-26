@@ -2,20 +2,61 @@ using UnityEngine;
 
 public class InventoryToggle : MonoBehaviour
 {
-    [Header("UI Settings")]
-    public GameObject inventoryImage;
+    public GameObject idCardPanel;
+
+    [Header("Hide while ID card is open")]
+    public GameObject mainUI;
+    public GameObject[] otherCanvasesOrPanels;
+
+    private bool mainUIWasActive;
+    private bool[] wasActive;
+
+    void Start()
+    {
+        wasActive = new bool[otherCanvasesOrPanels.Length];
+
+        if (idCardPanel != null)
+            idCardPanel.SetActive(false);
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
-            ToggleInventory();
+            ToggleIDCard();
     }
 
-    void ToggleInventory()
+    void ToggleIDCard()
     {
-        if (inventoryImage != null)
-            inventoryImage.SetActive(!inventoryImage.activeSelf);
+        bool opening = !idCardPanel.activeSelf;
+
+        if (opening)
+        {
+            mainUIWasActive = mainUI.activeSelf;
+            mainUI.SetActive(false);
+
+            for (int i = 0; i < otherCanvasesOrPanels.Length; i++)
+            {
+                if (otherCanvasesOrPanels[i] != null)
+                {
+                    wasActive[i] = otherCanvasesOrPanels[i].activeSelf;
+                    otherCanvasesOrPanels[i].SetActive(false);
+                }
+            }
+
+            idCardPanel.SetActive(true);
+        }
         else
-            Debug.LogWarning("Inventory Image UI element is not assigned in the Inspector.");
+        {
+            idCardPanel.SetActive(false);
+
+            if (mainUI != null)
+                mainUI.SetActive(mainUIWasActive);
+
+            for (int i = 0; i < otherCanvasesOrPanels.Length; i++)
+            {
+                if (otherCanvasesOrPanels[i] != null)
+                    otherCanvasesOrPanels[i].SetActive(wasActive[i]);
+            }
+        }
     }
 }

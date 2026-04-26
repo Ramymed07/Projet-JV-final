@@ -1,122 +1,105 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class PuzzleManager : MonoBehaviour
 {
-    [Header("Puzzle Configuration")]
-    public string secretCode = "1234";
+    public GameObject puzzlePanel;
+    public TMP_Text inputCodeText;
+    public string correctCode = "1234";
+    public GameObject objectToDisappear;
 
-    [Header("UI References")]
-    public TMP_Text inputDisplay;
-    public TMP_Text feedbackText;
-    public Button clearButton;
-    public Button submitButton;
-    public Button[] digitButtons;
+    private string currentInput = "";
+    private InteractableObject currentInteractable;
 
-    [Header("Feedback Messages")]
-    public string wrongCodeMessage = "Incorrect. Try again.";
-    public string correctCodeMessage = "Unlocked!";
-
-    private string _currentInput = "";
-    private InteractableObject _caller;
-    private int _openedOnFrame = -1;
-
-    private void Awake()
+    void Start()
     {
-        for (int i = 0; i < digitButtons.Length; i++)
-        {
-            int digit = i;
-            digitButtons[i].onClick.AddListener(() => AppendDigit(digit.ToString()));
-        }
-
-        if (clearButton  != null) clearButton.onClick.AddListener(ClearInput);
-        if (submitButton != null) submitButton.onClick.AddListener(TrySubmit);
-
-        gameObject.SetActive(false);
+        puzzlePanel.SetActive(false);
+        LockCursor();
     }
 
-    public void OpenPuzzle(InteractableObject caller)
+    void Update()
     {
-        _caller = caller;
-        _currentInput = "";
-        UpdateDisplay();
-        SetFeedback("");
-        _openedOnFrame = Time.frameCount;
-        gameObject.SetActive(true);
+        if (puzzlePanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        {
+            ClosePuzzle();
+        }
+    }
 
-        Time.timeScale = 0f;
+    public void OpenPuzzle(InteractableObject interactable)
+    {
+        currentInteractable = interactable;
+
+        currentInput = "";
+        UpdateDisplay();
+
+        StartCoroutine(OpenPuzzleAfterFrame());
+    }
+
+    private System.Collections.IEnumerator OpenPuzzleAfterFrame()
+    {
+        yield return null;
+
+        puzzlePanel.SetActive(true);
+        puzzlePanel.transform.SetAsLastSibling();
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
-    public void ClosePuzzle()
+    public void PressNumber(string number)
     {
-        gameObject.SetActive(false);
-        ResumeCursor();
-    }
-
-    public void SolvePuzzle()
-    {
-        SetFeedback(correctCodeMessage);
-        gameObject.SetActive(false);
-        ResumeCursor();
-        _caller?.OnPuzzleSolved();
-    }
-
-    public void AppendDigit(string digit)
-    {
-        if (_currentInput.Length >= secretCode.Length * 2) return;
-        _currentInput += digit;
+        currentInput += number;
         UpdateDisplay();
-        SetFeedback("");
     }
 
-    private void ClearInput()
+    public void ClearInput()
     {
-        _currentInput = "";
+        currentInput = "";
         UpdateDisplay();
-        SetFeedback("");
     }
 
-    private void TrySubmit()
+    public void PressEnter()
     {
-        if (_currentInput == secretCode)
+        if (currentInput == correctCode)
         {
             SolvePuzzle();
         }
         else
         {
-            SetFeedback(wrongCodeMessage);
-            _currentInput = "";
-            UpdateDisplay();
+            ClearInput();
         }
+    }
+
+    public void ClosePuzzle()
+    {
+        puzzlePanel.SetActive(false);
+
+        currentInput = "";
+        UpdateDisplay();
+
+        LockCursor();
+    }
+
+    private void SolvePuzzle()
+    {
+        if (objectToDisappear != null)
+            objectToDisappear.SetActive(false);
+
+        if (currentInteractable != null)
+            currentInteractable.MarkPuzzleSolved();
+
+        ClosePuzzle();
     }
 
     private void UpdateDisplay()
     {
-        if (inputDisplay != null)
-            inputDisplay.text = _currentInput;
+        if (inputCodeText != null)
+            inputCodeText.text = currentInput;
     }
 
-    private void SetFeedback(string message)
+    private void LockCursor()
     {
-        if (feedbackText != null)
-            feedbackText.text = message;
-    }
-
-    private void ResumeCursor()
-    {
-        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-    }
-
-    private void Update()
-    {
-        if (Time.frameCount == _openedOnFrame) return;
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-            ClosePuzzle();
     }
 }
