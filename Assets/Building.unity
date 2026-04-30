@@ -7590,7 +7590,7 @@ GameObject:
   - component: {fileID: 210988139}
   - component: {fileID: 210988138}
   - component: {fileID: 210988136}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bottom left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9043,7 +9043,7 @@ GameObject:
   - component: {fileID: 259137080}
   - component: {fileID: 259137079}
   - component: {fileID: 259137077}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Top middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9436,7 +9436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 267805203}
   - component: {fileID: 267805204}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ImagePuzzleManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9474,7 +9474,7 @@ MonoBehaviour:
   rayDistance: 8
   puzzleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   pieces:
   - {fileID: 846706296}
   - {fileID: 259137077}
@@ -19902,7 +19902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 631388419}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ImagePuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26167,7 +26167,7 @@ GameObject:
   - component: {fileID: 818506009}
   - component: {fileID: 818506008}
   - component: {fileID: 818506006}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Middle right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27125,7 +27125,7 @@ GameObject:
   - component: {fileID: 842129712}
   - component: {fileID: 842129711}
   - component: {fileID: 842129709}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27331,7 +27331,7 @@ GameObject:
   - component: {fileID: 846706299}
   - component: {fileID: 846706298}
   - component: {fileID: 846706296}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Top left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30920,7 +30920,7 @@ GameObject:
   - component: {fileID: 944580681}
   - component: {fileID: 944580680}
   - component: {fileID: 944580678}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bottom middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58212,7 +58212,7 @@ GameObject:
   - component: {fileID: 1625052376}
   - component: {fileID: 1625052375}
   - component: {fileID: 1625052373}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bottom right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59246,7 +59246,7 @@ GameObject:
   - component: {fileID: 1668282419}
   - component: {fileID: 1668282418}
   - component: {fileID: 1668282416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Middle left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68109,7 +68109,7 @@ GameObject:
   - component: {fileID: 1955086453}
   - component: {fileID: 1955086452}
   - component: {fileID: 1955086450}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Top right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
