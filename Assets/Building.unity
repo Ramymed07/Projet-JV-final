@@ -39528,9 +39528,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2011736426}
-    - targetCorrespondingSourceObject: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2011736425}
     - targetCorrespondingSourceObject: {fileID: 5126527961139664765, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1190509256}
@@ -52596,6 +52593,7 @@ GameObject:
   - component: {fileID: 788281343}
   - component: {fileID: 788281345}
   - component: {fileID: 788281344}
+  - component: {fileID: 788281346}
   m_Layer: 5
   m_Name: Hint menu
   m_TagString: Untagged
@@ -52661,6 +52659,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788281342}
   m_CullTransparentMesh: 1
+--- !u!114 &788281346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788281342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1adac02b20af424798eaae59659c410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HintMenuCursor
+  showCursorWhenActive: 1
+  restoreCursorOnClose: 1
 --- !u!4 &788607404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d6b31bbb0cc4d74f9eb0dcbe73380be, type: 3}
@@ -62247,8 +62259,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 479661990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.16036665}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.57398444}
+  m_AnchorMax: {x: 1, y: 0.9999988}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -62417,11 +62429,6 @@ MeshFilter:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 81ea1554179aeb444b2f3542d3854d49, type: 3}
   m_PrefabInstance: {fileID: 1911205672}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &929417371 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 7875734243577393527, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
-  m_PrefabInstance: {fileID: 1783727205}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &930764787
 GameObject:
@@ -72077,8 +72084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0, y: 0.00070698746}
+  m_SizeDelta: {x: -4.6707, y: 591.2712}
   m_Pivot: {x: 0, y: 1}
 --- !u!4 &1056343491 stripped
 Transform:
@@ -72164,6 +72171,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e4e11ea820df4144a80c5d1d3d605107, type: 3}
   m_PrefabInstance: {fileID: 1181813806}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1059673652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1059673653}
+  - component: {fileID: 1059673654}
+  m_Layer: 0
+  m_Name: Door Glow Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1059673653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059673652}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1783727206}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1059673654
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059673652}
+  m_Enabled: 0
+  serializedVersion: 13
+  m_Type: 2
+  m_Color: {r: 0, g: 1, b: 1, a: 0.54509807}
+  m_Intensity: 1000
+  m_Range: 1
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShapeRadius: 0.025
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1001 &1060041468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82137,12 +82241,12 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204664953}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 13
   m_Type: 2
-  m_Color: {r: 0.29294232, g: 0.038714837, b: 0.5471698, a: 1}
-  m_Intensity: 10
-  m_Range: 15
+  m_Color: {r: 0, g: 1, b: 1, a: 0.54509807}
+  m_Intensity: 1000
+  m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -83396,8 +83500,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 926918401}
   m_HandleRect: {fileID: 926918399}
   m_Direction: 2
-  m_Value: 1.0000006
-  m_Size: 0.8396334
+  m_Value: 0.99999785
+  m_Size: 0.42601433
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -97955,11 +98059,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d6b31bbb0cc4d74f9eb0dcbe73380be, type: 3}
   m_PrefabInstance: {fileID: 1726197307}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1381295966 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 7875734243577393527, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
-  m_PrefabInstance: {fileID: 2051457079}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1382434429
 PrefabInstance:
@@ -126778,17 +126877,14 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8c15c09b710a5314dbff7905426596ba, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1947196015166027971, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1059673653}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5592786116812672126, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1783727208}
-    - targetCorrespondingSourceObject: {fileID: 5592786116812672126, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1783727212}
-    - targetCorrespondingSourceObject: {fileID: 5592786116812672126, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1783727213}
   m_SourcePrefab: {fileID: 100100000, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
 --- !u!4 &1783727206 stripped
 Transform:
@@ -126812,48 +126908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ec4258bf4b7d045bc98f1f08115f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::ABCodeworld.OmniDoor3D.OmniDoor3DController
---- !u!114 &1783727212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783727207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da9dc415b026e1f4eac4933fb2af5bd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorGlowNoRenderer
-  glowColor:
-    r: 0
-    g: 1
-    b: 1
-    a: 1
-  emissionIntensity: 0
-  usePointLight: 1
-  glowLight: {fileID: 0}
-  lightRange: 3
-  lightIntensity: 0
-  targetRenderer: {fileID: 929417371}
-  materialInstance: {fileID: 0}
---- !u!114 &1783727213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783727207}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e004bae3637fee94e95a7619239d7bf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorGlow
-  glowColor: {r: 0, g: 1, b: 1, a: 0.54509807}
-  emissionIntensity: 0
-  usePointLight: 1
-  glowLight: {fileID: 0}
-  lightRange: 1
-  lightIntensity: 1000
 --- !u!1001 &1786771920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137680,8 +137734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 341.59, y: 164.02}
+  m_AnchoredPosition: {x: -0.27359, y: 169.69}
+  m_SizeDelta: {x: 425.5821, y: 251.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1956915728
 MonoBehaviour:
@@ -137696,7 +137750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 0
-  m_VerticalFit: 2
+  m_VerticalFit: 0
 --- !u!114 &1956915729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137717,14 +137771,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D\xC9BUT DU JEU\r\nInt\xE9ragissez avec le tableau devant le point d\u2019apparition
-    du personnage pour voir les contr\xF4les du jeu.\r\nPORTE D\u2019ENTR\xC9E\r\nLa
-    premi\xE8re \xE9tape du jeu est de d\xE9verrouiller le laboratoire.\r\nCODE D\u2019ENTR\xC9E
-    DU LABORATOIRE\r\nLe code demand\xE9 est le num\xE9ro d\u2019identification du
-    personnage qu\u2019on incarne (Dr. Heinz). La carte d\u2019identit\xE9, comme
-    indiqu\xE9 dans le tableau au d\xE9but du jeu, peut \xEAtre observ\xE9e avec
-    la touche \u2018I\u2019. \r\nLe code est : 102561\r\nPAS FINI DOIT AJOUTER FUTUR
-    PUZZLE ET CHANGEMENTS\r\n"
+  m_text: "\nD\xC9BUT DU JEU\n\r\nInt\xE9ragissez avec le tableau devant le point
+    d\u2019apparition du personnage pour voir les contr\xF4les du jeu.\n\r\nPORTE
+    D\u2019ENTR\xC9E\n\r\nLa premi\xE8re \xE9tape du jeu est de d\xE9verrouiller
+    le laboratoire.\n\r\nCODE D\u2019ENTR\xC9E DU LABORATOIRE\n\r\nLe code demand\xE9
+    est le num\xE9ro d\u2019identification du personnage qu\u2019on incarne (Dr.
+    Heinz). La carte d\u2019identit\xE9, comme indiqu\xE9 dans le tableau au d\xE9but
+    du jeu, peut \xEAtre observ\xE9e avec la touche \u2018I\u2019. \n\r\nLe code
+    est : 102561\n\r\nLABORATOIRE\n\nIl faut trouver les cl\xE9s correspondant aux
+    porte (regardez la couleur des cl\xE9s et des portes). Il y a aussi divers articles
+    de journaux \xE0 lire et qui pourront vous aider \xE0 retracer l'histoire.\n\nLes
+    puzzles avec des images peuvent \xEAtre r\xE9solus en cliquant avec la souris
+    sur deux fragments qui peuvent ensuite \xEAtre interchang\xE9s. Lorsque l'image
+    est compl\xE8te, une cl\xE9 apparait.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -137790,7 +137849,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -40.337418, y: -65.150696, z: -40.464752, w: 0}
+  m_margin: {x: 4.4124603, y: 0.5336151, z: -0.27394104, w: -0.51673883}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -141446,19 +141505,6 @@ MonoBehaviour:
   playerCamera: {fileID: 924335141}
   interactSound: {fileID: 8300000, guid: 90a5ec19824568443939a12e5171c6c1, type: 3}
   audioSource: {fileID: 2011736423}
---- !u!114 &2011736425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011736411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4231b2789fa770042b6ae95ca1822927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CanvasCloser
-  excludeTag: PersistentUI
 --- !u!114 &2011736426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145577,12 +145623,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5592786116812672126, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2051457082}
-    - targetCorrespondingSourceObject: {fileID: 5592786116812672126, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2051457086}
-    - targetCorrespondingSourceObject: {fileID: 5592786116812672126, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2051457087}
   m_SourcePrefab: {fileID: 100100000, guid: 2354bee90a3a33142b514ec543c80c5b, type: 3}
 --- !u!4 &2051457080 stripped
 Transform:
@@ -145606,48 +145646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ec4258bf4b7d045bc98f1f08115f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::ABCodeworld.OmniDoor3D.OmniDoor3DController
---- !u!114 &2051457086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051457081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da9dc415b026e1f4eac4933fb2af5bd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorGlowNoRenderer
-  glowColor:
-    r: 0
-    g: 1
-    b: 1
-    a: 1
-  emissionIntensity: 0
-  usePointLight: 1
-  glowLight: {fileID: 0}
-  lightRange: 3
-  lightIntensity: 0
-  targetRenderer: {fileID: 1381295966}
-  materialInstance: {fileID: 0}
---- !u!114 &2051457087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051457081}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e004bae3637fee94e95a7619239d7bf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorGlow
-  glowColor: {r: 0, g: 1, b: 1, a: 0.54509807}
-  emissionIntensity: 0
-  usePointLight: 1
-  glowLight: {fileID: 0}
-  lightRange: 1
-  lightIntensity: 1000
 --- !u!4 &2051474079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44fed6aff454809469effaac1a0b86ed, type: 3}
