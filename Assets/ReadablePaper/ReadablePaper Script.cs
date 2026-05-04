@@ -129,7 +129,7 @@ public class ReadablePaper : MonoBehaviour
     private void UnlockCursor()
     {
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        Cursor.visible = false;
     }
 
     public void RestartGame()

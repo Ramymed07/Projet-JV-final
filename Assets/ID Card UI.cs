@@ -44,6 +44,9 @@ public class InventoryToggle : MonoBehaviour
             }
 
             idCardPanel.SetActive(true);
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = false;
         }
         else
         {
@@ -57,6 +60,9 @@ public class InventoryToggle : MonoBehaviour
                 if (otherCanvasesOrPanels[i] != null)
                     otherCanvasesOrPanels[i].SetActive(wasActive[i]);
             }
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }
