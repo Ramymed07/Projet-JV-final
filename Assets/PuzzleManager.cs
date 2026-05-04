@@ -8,12 +8,19 @@ public class PuzzleManager : MonoBehaviour
     public string correctCode = "1234";
     public GameObject objectToDisappear;
 
+    [Header("Reward Key")]
+    public GameObject keyToAppear;
+
     private string currentInput = "";
     private InteractableObject currentInteractable;
 
     void Start()
     {
         puzzlePanel.SetActive(false);
+
+        if (keyToAppear != null)
+            keyToAppear.SetActive(false);
+
         LockCursor();
     }
 
@@ -84,6 +91,9 @@ public class PuzzleManager : MonoBehaviour
     {
         if (objectToDisappear != null)
             objectToDisappear.SetActive(false);
+
+        if (keyToAppear != null)
+            keyToAppear.SetActive(true);
 
         if (currentInteractable != null)
             currentInteractable.MarkPuzzleSolved();

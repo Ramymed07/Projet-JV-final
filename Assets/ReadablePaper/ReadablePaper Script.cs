@@ -21,6 +21,8 @@ public class ReadablePaper : MonoBehaviour
     private bool playerInRange = false;
     private bool isReading = false;
 
+    private static ReadablePaper activePaper;
+
     void Start()
     {
         if (readPanel != null)
@@ -35,12 +37,12 @@ public class ReadablePaper : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E) && !isReading)
+        if (playerInRange && Input.GetKeyDown(KeyCode.E) && !isReading && activePaper == null)
         {
             OpenPaper();
         }
 
-        if (isReading && Input.GetKeyDown(KeyCode.Escape))
+        if (activePaper == this && isReading && Input.GetKeyDown(KeyCode.Escape))
         {
             ClosePaper();
         }
@@ -48,22 +50,25 @@ public class ReadablePaper : MonoBehaviour
 
     void OpenPaper()
     {
+        activePaper = this;
         isReading = true;
 
         if (readPanel != null)
+        {
             readPanel.SetActive(true);
+            readPanel.transform.SetAsLastSibling();
+        }
 
         if (interactPrompt != null)
             interactPrompt.SetActive(false);
 
         if (mainUI != null)
-            mainUI.SetActive(false); // 👈 ADD THIS
+            mainUI.SetActive(false);
 
         if (firstPersonController != null)
             firstPersonController.enabled = false;
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        UnlockCursor();
     }
 
     void ClosePaper()
@@ -73,6 +78,8 @@ public class ReadablePaper : MonoBehaviour
         if (readPanel != null)
             readPanel.SetActive(false);
 
+        activePaper = null;
+
         if (isFinalPaper)
         {
             ShowEndingScreen();
@@ -80,30 +87,49 @@ public class ReadablePaper : MonoBehaviour
         }
 
         if (mainUI != null)
-            mainUI.SetActive(true); // 👈 only for normal papers
+            mainUI.SetActive(true);
 
         if (firstPersonController != null)
             firstPersonController.enabled = true;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
         if (playerInRange && interactPrompt != null)
             interactPrompt.SetActive(true);
+
+        LockCursor();
     }
 
     void ShowEndingScreen()
     {
         if (endingScreen != null)
+        {
             endingScreen.SetActive(true);
+            endingScreen.transform.SetAsLastSibling();
+        }
+
+        if (mainUI != null)
+            mainUI.SetActive(false);
+
+        if (interactPrompt != null)
+            interactPrompt.SetActive(false);
 
         if (firstPersonController != null)
             firstPersonController.enabled = false;
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        UnlockCursor();
 
         Time.timeScale = 0f;
+    }
+
+    private void LockCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void RestartGame()
@@ -131,7 +157,7 @@ public class ReadablePaper : MonoBehaviour
             Debug.Log("Player entered paper trigger");
             playerInRange = true;
 
-            if (interactPrompt != null && !isReading)
+            if (interactPrompt != null && !isReading && activePaper == null)
                 interactPrompt.SetActive(true);
         }
     }
@@ -148,9 +174,8 @@ public class ReadablePaper : MonoBehaviour
             if (interactPrompt != null)
                 interactPrompt.SetActive(false);
 
-            if (isReading)
+            if (isReading && activePaper == this)
                 ClosePaper();
         }
     }
-
 }
