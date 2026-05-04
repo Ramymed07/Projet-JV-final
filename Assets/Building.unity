@@ -52673,6 +52673,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HintMenuCursor
   showCursorWhenActive: 1
   restoreCursorOnClose: 1
+  topLeftUI: {fileID: 1555280123}
+  topRightUI: {fileID: 996662414}
 --- !u!4 &788607404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d6b31bbb0cc4d74f9eb0dcbe73380be, type: 3}
