@@ -14086,7 +14086,6 @@ MonoBehaviour:
   mainUI: {fileID: 1854196361}
   readPanel: {fileID: 1002430003}
   interactPrompt: {fileID: 1721051028}
-  interfaceCanvas: {fileID: 131576865}
   firstPersonController: {fileID: 1334623272}
   isFinalPaper: 0
   endingScreen: {fileID: 0}
@@ -65290,7 +65289,6 @@ MonoBehaviour:
   mainUI: {fileID: 1854196361}
   readPanel: {fileID: 664271161}
   interactPrompt: {fileID: 1721051028}
-  interfaceCanvas: {fileID: 0}
   firstPersonController: {fileID: 1334623272}
   isFinalPaper: 0
   endingScreen: {fileID: 0}
@@ -67395,7 +67393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e66c40d3b243fc54681f72b16c1f449d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4037f5951eb715c4f9e87db5314523e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -68800,7 +68798,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ed7cd3b925e933a42820735785485072, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4cf5d2bb66576e4bb98bf77a134ccfb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -71840,7 +71838,6 @@ MonoBehaviour:
   mainUI: {fileID: 1854196361}
   readPanel: {fileID: 1067911091}
   interactPrompt: {fileID: 1721051028}
-  interfaceCanvas: {fileID: 0}
   firstPersonController: {fileID: 1334623272}
   isFinalPaper: 0
   endingScreen: {fileID: 0}
@@ -72130,7 +72127,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 336aad583fdc1314ea5a5e2ef7628382, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68e39300b87f9b84a9aa827b4cebf844, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76529,7 +76526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fc392065b538f5e40b27c531b57c3f23, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95e9205f3f59a6b44a5e298efaa7ce2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -104987,7 +104984,6 @@ MonoBehaviour:
   mainUI: {fileID: 1854196361}
   readPanel: {fileID: 1017769613}
   interactPrompt: {fileID: 1721051028}
-  interfaceCanvas: {fileID: 0}
   firstPersonController: {fileID: 1334623272}
   isFinalPaper: 1
   endingScreen: {fileID: 1792036440}
@@ -142812,6 +142808,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a7d8cb3771c4c2e4b91ed36683df66d9, type: 2}
+    - target: {fileID: 6400000, guid: 69f7c30f3ddce4e44aefc10a953425fd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -146055,7 +146055,6 @@ MonoBehaviour:
   mainUI: {fileID: 1854196361}
   readPanel: {fileID: 664271161}
   interactPrompt: {fileID: 1721051028}
-  interfaceCanvas: {fileID: 0}
   firstPersonController: {fileID: 1334623272}
   isFinalPaper: 0
   endingScreen: {fileID: 0}
@@ -151042,7 +151041,6 @@ MonoBehaviour:
   mainUI: {fileID: 1854196361}
   readPanel: {fileID: 1131361901}
   interactPrompt: {fileID: 1721051028}
-  interfaceCanvas: {fileID: 0}
   firstPersonController: {fileID: 1334623272}
   isFinalPaper: 0
   endingScreen: {fileID: 0}
