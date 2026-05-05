@@ -19,6 +19,10 @@ public class ImagePuzzleManager : MonoBehaviour
     public GameObject keyObject;
     public Light keyGlowLight;
 
+    [Header("Solved Sound")]
+    public AudioSource audioSource;
+    public AudioClip solvedSound;
+
     private PuzzlePiece firstSelected;
     private bool puzzleSolved = false;
 
@@ -168,6 +172,11 @@ public class ImagePuzzleManager : MonoBehaviour
     void RevealKey()
     {
         Debug.Log("Puzzle solved! Key revealed.");
+
+        if (audioSource != null && solvedSound != null)
+        {
+            audioSource.PlayOneShot(solvedSound);
+        }
 
         if (keyObject != null)
             keyObject.SetActive(true);

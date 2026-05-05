@@ -13,6 +13,10 @@ public class PlayerKeyInteractor : MonoBehaviour
     [Header("UI Slots")]
     public GameObject[] keySlots;
 
+    [Header("Key Pickup Sound")]
+    public AudioSource audioSource;
+    public AudioClip keyPickupSound;
+
     private Dictionary<string, string> collectedKeys = new Dictionary<string, string>();
     private int keysCollectedCount = 0;
 
@@ -82,8 +86,22 @@ public class PlayerKeyInteractor : MonoBehaviour
 
         ShowNextKeySlot();
 
+        PlayKeyPickupSound();
+
         Debug.Log($"Picked up {keyData.keyId}.");
         Destroy(keyData.gameObject);
+    }
+
+    void PlayKeyPickupSound()
+    {
+        if (audioSource != null && keyPickupSound != null)
+        {
+            audioSource.PlayOneShot(keyPickupSound);
+        }
+        else
+        {
+            Debug.LogWarning("Key pickup sound or AudioSource is missing.");
+        }
     }
 
     void TryUnlockDoorSet(GameObject hitObject)
