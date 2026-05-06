@@ -2547,6 +2547,8 @@ MonoBehaviour:
   pickupKey: 101
   playerCamera: {fileID: 924335141}
   Slot1: {fileID: 15009129}
+  pickupSound: {fileID: 0}
+  pickupSoundVolume: 1
 --- !u!65 &31042718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9178,6 +9180,8 @@ MonoBehaviour:
   pickupKey: 101
   playerCamera: {fileID: 924335141}
   Slot1: {fileID: 15009129}
+  pickupSound: {fileID: 0}
+  pickupSoundVolume: 1
 --- !u!65 &134445278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40045,6 +40049,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2011736426}
+    - targetCorrespondingSourceObject: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2011736434}
     - targetCorrespondingSourceObject: {fileID: 5126527961139664765, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1190509256}
@@ -51735,11 +51742,110 @@ MonoBehaviour:
   pickupKey: 101
   playerCamera: {fileID: 924335141}
   Slot1: {fileID: 15009129}
+  pickupSound: {fileID: 8300000, guid: 460cf6f2c990ad84ea91c7036bb7c6ac, type: 3}
+  pickupSoundVolume: 1
 --- !u!4 &761825698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 501a19826a840da4a93f946d0d749a6e, type: 3}
   m_PrefabInstance: {fileID: 1295397080}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &761825701
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761825690}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 460cf6f2c990ad84ea91c7036bb7c6ac, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &763442236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c971740110bfabe49baeb4d506c796b0, type: 3}
@@ -52150,6 +52256,8 @@ MonoBehaviour:
   pickupKey: 101
   playerCamera: {fileID: 924335141}
   Slot1: {fileID: 15009129}
+  pickupSound: {fileID: 0}
+  pickupSoundVolume: 1
 --- !u!65 &769777809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83343,7 +83451,7 @@ Transform:
   m_GameObject: {fileID: 1204664953}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7148195, z: -0, w: 0.6993091}
-  m_LocalPosition: {x: 15.344, y: 0.97, z: -1.988}
+  m_LocalPosition: {x: 15.344, y: 0.79, z: -1.988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83388,7 +83496,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 2
-  m_Color: {r: 0, g: 1, b: 1, a: 0.54509807}
+  m_Color: {r: 0.44235432, g: 0, b: 1, a: 0.54509807}
   m_Intensity: 1.5
   m_Range: 4
   m_SpotAngle: 30
@@ -84740,7 +84848,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926918399}
   m_Direction: 2
   m_Value: 0.99999785
-  m_Size: 0.42601433
+  m_Size: 0.4260143
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -94100,6 +94208,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 501a19826a840da4a93f946d0d749a6e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 761825697}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 501a19826a840da4a93f946d0d749a6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 761825701}
   m_SourcePrefab: {fileID: 100100000, guid: 501a19826a840da4a93f946d0d749a6e, type: 3}
 --- !u!1001 &1296404031
 PrefabInstance:
@@ -96330,7 +96441,7 @@ MonoBehaviour:
   - {fileID: 162262284}
   - {fileID: 1093904161}
   audioSource: {fileID: 1334623281}
-  keyPickupSound: {fileID: 8300000, guid: 1f27e2e2dfca6374eb230a77d49d5f6d, type: 3}
+  keyPickupSound: {fileID: 8300000, guid: 460cf6f2c990ad84ea91c7036bb7c6ac, type: 3}
 --- !u!4 &1334623274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 937451010987979973, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
@@ -96364,9 +96475,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: cfee5478835670e47a004b4e7c151955, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2d87e7e1663fe7945ba644d69dd1f5a8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.243
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -96461,7 +96572,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 1f27e2e2dfca6374eb230a77d49d5f6d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 460cf6f2c990ad84ea91c7036bb7c6ac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -111486,9 +111597,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Touches:\nLampe de poche: F\nE:int\xE9ragir avec les objets\nEsc: Fermer
-    interface\nSpace: sauter\nShift: Courir\nWASD: Marcher\nI: Voir carte d'identit\xE9\n\nLisez
-    les Journaux !\n"
+  m_text: "Touches:\nF: Lampe de poche \nE:Int\xE9ragir avec les objets\nEsc: Fermer
+    interface\nSpace: sauter\nShift: Courir\nWASD: Marcher\nI: Voir et fermer carte
+    d'identit\xE9\nClic gauche de la souris: Cacher le curseur\n\nLisez les Journaux
+    !\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -111515,8 +111627,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -128010,7 +128122,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781364746}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -16.26}
+  m_LocalPosition: {x: 0, y: 0, z: -16.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -128018,7 +128130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89.424, y: -0.19}
+  m_AnchoredPosition: {x: 89.424, y: 0.13}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781364748
@@ -128041,8 +128153,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Appuyez sur un carr\xE9, et apr\xE8s appuyez sur un autre pour \xE9changer
-    leurs positions. Vous devez former une image!"
+  m_text: "R\xE9solvez ce puzzle en cliquant avec la souris sur deux fragments que
+    vous pouvez ensuite \xE9changer. Lorsque l'image est compl\xE8te, une cl\xE9
+    appara\xEEt."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -139849,13 +139962,12 @@ MonoBehaviour:
     le laboratoire.\n\r\nCODE D\u2019ENTR\xC9E DU LABORATOIRE\n\r\nLe code demand\xE9
     est le num\xE9ro d\u2019identification du personnage qu\u2019on incarne (Dr.
     Heinz). La carte d\u2019identit\xE9, comme indiqu\xE9 dans le tableau au d\xE9but
-    du jeu, peut \xEAtre observ\xE9e avec la touche \u2018I\u2019. \n\r\nLe code
-    est : 102561\n\r\nLABORATOIRE\n\nIl faut trouver les cl\xE9s correspondant aux
-    porte (regardez la couleur des cl\xE9s et des portes). Il y a aussi divers articles
-    de journaux \xE0 lire et qui pourront vous aider \xE0 retracer l'histoire.\n\nLes
-    puzzles avec des images peuvent \xEAtre r\xE9solus en cliquant avec la souris
-    sur deux fragments qui peuvent ensuite \xEAtre interchang\xE9s. Lorsque l'image
-    est compl\xE8te, une cl\xE9 apparait.\r\n"
+    du jeu, peut \xEAtre observ\xE9e avec la touche \u2018I\u2019.\n\r\nLABORATOIRE\n\nIl
+    faut trouver les cl\xE9s correspondant aux porte (regardez la couleur des cl\xE9s
+    et des portes). Il y a aussi divers articles de journaux \xE0 lire et qui pourront
+    vous aider \xE0 retracer l'histoire.\n\nLes puzzles avec des images peuvent \xEAtre
+    r\xE9solus en cliquant avec la souris sur deux fragments qui peuvent ensuite
+    \xEAtre interchang\xE9s. Lorsque l'image est compl\xE8te, une cl\xE9 apparait.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -143698,6 +143810,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TaggedSoundInteractor
   interactTag: locked door (Entrance)
+  interactKey: 101
+  interactionRange: 5
+  playerCamera: {fileID: 924335141}
+  interactSound: {fileID: 8300000, guid: 90a5ec19824568443939a12e5171c6c1, type: 3}
+  audioSource: {fileID: 2011736423}
+--- !u!114 &2011736434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011736411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042294c35d5fb1345ae6c09573916c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaggedSoundInteractor
+  interactTag: locked door (storage room)
   interactKey: 101
   interactionRange: 5
   playerCamera: {fileID: 924335141}
