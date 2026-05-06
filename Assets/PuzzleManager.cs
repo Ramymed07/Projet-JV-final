@@ -8,6 +8,11 @@ public class PuzzleManager : MonoBehaviour
     public string correctCode = "1234";
     public GameObject objectToDisappear;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip Right_ID;
+    public AudioClip Wrong_ID;
+
     [Header("Reward Key")]
     public GameObject keyToAppear;
 
@@ -69,10 +74,14 @@ public class PuzzleManager : MonoBehaviour
     {
         if (currentInput == correctCode)
         {
+            if (audioSource != null && Right_ID != null)
+                audioSource.PlayOneShot(Right_ID);
             SolvePuzzle();
         }
         else
         {
+            if (audioSource != null && Wrong_ID != null)
+                audioSource.PlayOneShot(Wrong_ID);
             ClearInput();
         }
     }
